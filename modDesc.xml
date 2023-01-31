@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="71">
+    <author>GMNGjoy</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Vomer VR-Roller Black Edition</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[Vomer Roller with customizable color &amp; slightly faster speeds.]]>
+        </en>
+    </description>
+    <iconFilename>icons/icon_VR708090.dds</iconFilename>
+    <multiplayer supported="true" />
+    
+    <storeItems>
+		<storeItem xmlFilename="VR708090.xml"/>
+        <storeItem xmlFilename="VR100110.xml"/>
+    </storeItems>
+
+    <l10n>
+        <text name="configuration_metros">
+            <en>Meters</en>
+            <de>Meters</de>
+            <fr>Mètres</fr>
+            <es>Modelo</es>
+        </text>
+        <text name="configuration_huellas">
+            <en>Erases tracks</en>
+            <de>Fußabdrücke löschen</de>
+            <fr>Effacer les traces de pas</fr>
+            <es>Borra huellas</es>
+        </text>
+        <text name="configuration_sinhuellas">
+            <en>No</en>
+            <de>Keine</de>
+            <fr>Pas de</fr>
+            <es>No</es>
+        </text>
+        <text name="configuration_conhuellas">
+            <en>Yes</en>
+            <de>Wenn</de>
+            <fr>Si</fr>
+            <es>Si</es>
+        </text>
+        <text name="configuration_rulos">
+            <en>Roller type</en>
+            <de>Rollentyp</de>
+            <fr>à rouleaux</fr>
+            <es>Tipo de Rulos</es>
+        </text>
+        <text name="configuration_liso">
+            <en>Smooth rollers</en>
+            <de>Glatte Rollen</de>
+            <fr>Rouleaux lisses</fr>
+            <es>Rodillos lisos</es>
+        </text>
+        <text name="configuration_cambridge">
+            <en>Cambridge rollers</en>
+            <de>Cambridge-Walzen</de>
+            <fr>Rouleaux de cambridge</fr>
+            <es>Rodillos cambridge</es>
+        </text>
+    </l10n>
+	
+    <brands>
+        <brand name="VOMER" title="VOMER" image="icons/brand_vomer.dds"/>
+    </brands>
+
+    <vehicleTypes>
+		<type name="grassRoller" parent="roller" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+	</vehicleTypes>
+</modDesc>

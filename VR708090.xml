@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="roller" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Vomer_Roller/xml/VR708090.xml">
+        <attributes>
+            <set path="vehicle.storeData.name" value="VR-Roller 70/80/90 Black Edition"/>
+            
+            <!-- re-set paths since we're extending it -->
+            <set path="vehicle.storeData.image" value="icons/store_80.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Vomer_Roller/i3d/VR708090.i3d"/>
+            <set path="vehicle.base.speedLimit#value" value="18"/>
+
+            <set path="vehicle.designConfigurations.designConfiguration(0)#name" value="VR-Roller 70 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(0)#vehicleName" value="VR-Roller 70 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(0)#vehicleIcon" value="icons/store_80.dds"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#name" value="VR-Roller 90 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#vehicleName" value="VR-Roller 80 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#vehicleIcon" value="icons/store_80.dds"/>
+            <set path="vehicle.designConfigurations.designConfiguration(2)#name" value="VR-Roller 90 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(2)#vehicleName" value="VR-Roller 90 Black Edition"/>
+            <set path="vehicle.designConfigurations.designConfiguration(2)#vehicleIcon" value="icons/store_80.dds"/>
+            
+            <!-- change what's included to black -->
+            <set path="vehicle.baseMaterial.material(0)#name" value="Mat_ChasisCentral"/>
+            <set path="vehicle.baseMaterial.material(0)#baseNode" value="0>0"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(1)#name" value="Mat_Soporte"/>
+            <set path="vehicle.baseMaterial.material(1)#baseNode" value="0>0|3|0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            
+            <set path="vehicle.baseMaterial.material(2)#name" value="Mat_ChasisRuedas"/>
+            <set path="vehicle.baseMaterial.material(2)#baseNode" value="0>1|0"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(3)#name" value="SujetarRuloIzquierdo"/>
+            <set path="vehicle.baseMaterial.material(3)#baseNode" value="2>0|0"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(4)#name" value="Mat_QuitarHuellas"/>
+            <set path="vehicle.baseMaterial.material(4)#baseNode" value="0>0|8|0"/>
+            <set path="vehicle.baseMaterial.material(4).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(4).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(5)#name" value="Mat_QuitarHuellas2"/>
+            <set path="vehicle.baseMaterial.material(5)#baseNode" value="0>0|8|1"/>
+            <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(6)#name" value="Mat_BarraTiro"/>
+            <set path="vehicle.baseMaterial.material(6)#baseNode" value="3>0"/>
+            <set path="vehicle.baseMaterial.material(6).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(6).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(7)#name" value="Mat_Placa"/>
+            <set path="vehicle.baseMaterial.material(7)#baseNode" value="0>0|9|0|2"/>
+            <set path="vehicle.baseMaterial.material(7).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(7).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(8)#name" value="Mat_Placa"/>
+            <set path="vehicle.baseMaterial.material(8)#baseNode" value="0>0|9|1|2"/>
+            <set path="vehicle.baseMaterial.material(8).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(8).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(9)#name" value="Mat_Giro1"/>
+            <set path="vehicle.baseMaterial.material(9)#baseNode" value="0>0|2|2|0"/>
+            <set path="vehicle.baseMaterial.material(9).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(9).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(10)#name" value="Mat_Giro2"/>
+            <set path="vehicle.baseMaterial.material(10)#baseNode" value="0>0|2|3|0"/>
+            <set path="vehicle.baseMaterial.material(10).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(10).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(11)#name" value="Mat_HidraRulos"/>
+            <set path="vehicle.baseMaterial.material(11)#baseNode" value="0>0|2|4|0"/>
+            <set path="vehicle.baseMaterial.material(11).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(11).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(12)#name" value="Mat_BarraRulo"/>
+            <set path="vehicle.baseMaterial.material(12)#baseNode" value="0>0|6|0"/>
+            <set path="vehicle.baseMaterial.material(12).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(12).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(13)#name" value="Mat_HidraRuedas"/>
+            <set path="vehicle.baseMaterial.material(13)#baseNode" value="0>0|5|0"/>
+            <set path="vehicle.baseMaterial.material(13).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(13).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(14)#name" value="Mat_SoporteChasisRulos"/>
+            <set path="vehicle.baseMaterial.material(14)#baseNode" value="0>1|0|0|0"/>
+            <set path="vehicle.baseMaterial.material(14).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(14).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(15)#name" value="Mat_TirarFrenos"/>
+            <set path="vehicle.baseMaterial.material(15)#baseNode" value="0>1|0|2|0"/>
+            <set path="vehicle.baseMaterial.material(15).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(15).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(16)#name" value="Mat_HidraFrenos"/>
+            <set path="vehicle.baseMaterial.material(16)#baseNode" value="0>1|0|5|0"/>
+            <set path="vehicle.baseMaterial.material(16).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(16).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(17)#name" value="Mat_Cambridge"/>
+            <set path="vehicle.baseMaterial.material(17)#baseNode" value="1>0|1"/>
+            <set path="vehicle.baseMaterial.material(17).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(17).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(18)#name" value="Mat_RuloLiso"/>
+            <set path="vehicle.baseMaterial.material(18)#baseNode" value="0>0|1|0"/>
+            <set path="vehicle.baseMaterial.material(18).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(18).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(19)#name" value="Mat_ChasisCentral2"/>
+            <set path="vehicle.baseMaterial.material(19)#baseNode" value="0>0|0|0"/>
+            <set path="vehicle.baseMaterial.material(19).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(19).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(20)#name" value="Mat_Llantas"/>
+            <set path="vehicle.baseMaterial.material(20)#baseNode" value="0>1|0|1|0|0"/>
+            <set path="vehicle.baseMaterial.material(20).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(20).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(20).shaderParameter(1)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(20).shaderParameter(1)#name" value="colorMat1"/>
+
+            <set path="vehicle.baseMaterial.material(21)#name" value="SujetarRuloDerecho"/>
+            <set path="vehicle.baseMaterial.material(21)#baseNode" value="1>0|0"/>
+            <set path="vehicle.baseMaterial.material(21).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(21).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(22)#name" value="Mat_SujetarDerechoBrazo"/>
+            <set path="vehicle.baseMaterial.material(22)#baseNode" value="0>0|2|0"/>
+            <set path="vehicle.baseMaterial.material(22).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(22).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(23)#name" value="SujetarRuloDerecho2"/>
+            <set path="vehicle.baseMaterial.material(23)#baseNode" value="1>1|0"/>
+            <set path="vehicle.baseMaterial.material(23).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(23).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(24)#name" value="SujetarRuloIzquierdo2"/>
+            <set path="vehicle.baseMaterial.material(24)#baseNode" value="2>1|0"/>
+            <set path="vehicle.baseMaterial.material(24).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(24).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(25)#name" value="SujetarRuloDerecho3"/>
+            <set path="vehicle.baseMaterial.material(25)#baseNode" value="1>2|0"/>
+            <set path="vehicle.baseMaterial.material(25).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(25).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(26)#name" value="SujetarRuloIzquierdo3"/>
+            <set path="vehicle.baseMaterial.material(26)#baseNode" value="2>2|0"/>
+            <set path="vehicle.baseMaterial.material(26).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(26).shaderParameter(0)#name" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterial.material(27)#name" value="Mat_RuloLiso2"/>
+            <set path="vehicle.baseMaterial.material(27)#baseNode" value="1>1|1"/>
+            <set path="vehicle.baseMaterial.material(27).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(27).shaderParameter(0)#name" value="colorMat0"/>
+
+
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="Vomer Red"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="0.73 0.049 0.014 0.0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="Mat_ChasisCentral"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="Mat_Soporte"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(2)#name" value="Mat_ChasisRuedas"/>
+            <set path="vehicle.baseMaterialConfigurations.material(2)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(3)#name" value="SujetarRuloIzquierdo"/>
+            <set path="vehicle.baseMaterialConfigurations.material(3)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(4)#name" value="Mat_QuitarHuellas"/>
+            <set path="vehicle.baseMaterialConfigurations.material(4)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(5)#name" value="Mat_QuitarHuellas2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(5)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(6)#name" value="Mat_BarraTiro"/>
+            <set path="vehicle.baseMaterialConfigurations.material(6)#shaderParameter" value="colorMat0"/>
+        
+            <set path="vehicle.baseMaterialConfigurations.material(7)#name" value="Mat_Placa"/>
+            <set path="vehicle.baseMaterialConfigurations.material(7)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(8)#name" value="Mat_Giro1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(8)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(9)#name" value="Mat_Giro2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(9)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(10)#name" value="Mat_HidraRulos"/>
+            <set path="vehicle.baseMaterialConfigurations.material(10)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(11)#name" value="Mat_BarraRulo"/>
+            <set path="vehicle.baseMaterialConfigurations.material(11)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(12)#name" value="Mat_HidraRuedas"/>
+            <set path="vehicle.baseMaterialConfigurations.material(12)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(13)#name" value="Mat_SoporteChasisRulos"/>
+            <set path="vehicle.baseMaterialConfigurations.material(13)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(14)#name" value="Mat_TirarFrenos"/>
+            <set path="vehicle.baseMaterialConfigurations.material(14)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(15)#name" value="Mat_HidraFrenos"/>
+            <set path="vehicle.baseMaterialConfigurations.material(15)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(16)#name" value="Mat_Llantas"/>
+            <set path="vehicle.baseMaterialConfigurations.material(16)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(17)#name" value="SujetarRuloDerecho"/>
+            <set path="vehicle.baseMaterialConfigurations.material(17)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(18)#name" value="SujetarRuloDerecho2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(18)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(19)#name" value="SujetarRuloDerecho3"/>
+            <set path="vehicle.baseMaterialConfigurations.material(19)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(20)#name" value="Mat_SujetarDerechoBrazo"/>
+            <set path="vehicle.baseMaterialConfigurations.material(20)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(21)#name" value="SujetarRuloIzquierdo2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(21)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(22)#name" value="SujetarRuloIzquierdo3"/>
+            <set path="vehicle.baseMaterialConfigurations.material(22)#shaderParameter" value="colorMat0"/>
+
+            <set path="vehicle.baseMaterialConfigurations.material(23)#name" value="Mat_ChasisCentral2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(23)#shaderParameter" value="colorMat0"/>
+
+
+            <set path="vehicle.designMaterialConfigurations#price" value="500"/>
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="7"/>
+            <set path="vehicle.designMaterialConfigurations#title" value="Rollers"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="Vomer Red"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="0.73 0.049 0.014 0.0"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="Mat_Cambridge"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="Mat_RuloLiso"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#name" value="Mat_RuloLiso2"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#shaderParameter" value="colorMat0"/>
+            
+
+            <set path="vehicle.designMaterial2Configurations#price" value="500"/>
+            <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterial2Configurations#defaultColorIndex" value="7"/>
+            <set path="vehicle.designMaterial2Configurations#title" value="Wheels"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#name" value="Vomer Red"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#color" value="0.73 0.049 0.014 0.0"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#name" value="Mat_Llantas"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#shaderParameter" value="colorMat1"/>
+
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>VR-Roller 70/80/90 Black Edition</name>
+        <image>icons/store_80.dds</image>
+        <brand>VOMER</brand>
+        <category>rollers</category>
+    </storeData>
+</vehicle>
